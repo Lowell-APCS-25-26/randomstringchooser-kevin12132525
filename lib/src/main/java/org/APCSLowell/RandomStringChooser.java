@@ -7,7 +7,9 @@ public class RandomStringChooser {
 
     public RandomStringChooser(String[] words) {
         myWords = new String[words.length];
-        System.arraycopy(words, 0, myWords, 0, words.length);
+        for (int i = 0; i < words.length; i++) {
+            myWords[i] = words[i];
+        }
         numLeft = words.length;
     }
 
